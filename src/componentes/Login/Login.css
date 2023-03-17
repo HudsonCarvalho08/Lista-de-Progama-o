@@ -1,0 +1,16 @@
+.login {
+    text-align: center;
+    background-color: #006400;
+    display: grid;
+    height: 100vh;
+   
+}
+
+
+
+.login-1 {
+    width: 25%;
+    height: 75%;
+    margin: 12vh 85vh 2vh;
+}
+
