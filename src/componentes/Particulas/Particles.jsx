@@ -30,11 +30,11 @@ function Particle() {
                     events: {
                         onClick: {
                             enable: true,
-                            mode: "push",
+                            mode: "none",
                         },
                         onHover: {
                             enable: true,
-                            mode: "repulse",
+                            mode: "none",
                         },
                         resize: true,
                     },
@@ -56,7 +56,7 @@ function Particle() {
                         color: "#ffffff",
                         distance: 150,
                         enable: true,
-                        opacity: 0.5,
+                        opacity: 1.5,
                         width: 1,
                     },
                     collisions: {
@@ -86,7 +86,7 @@ function Particle() {
                         type: "circle",
                     },
                     size: {
-                        value: { min: 1, max: 3 },
+                        value: { min: 1, max: 2 },
                     },
                 },
                 detectRetina: true,

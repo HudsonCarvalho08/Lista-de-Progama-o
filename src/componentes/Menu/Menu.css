@@ -1,0 +1,59 @@
+.principal {
+   background-color: black;
+    height: 100vh;
+    margin: 0 0;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+   
+    
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 0;
+    
+}
+
+
+.menu-4 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 4vh 152vh; 
+}
+
+.menu-3 {
+    box-shadow: none;
+    margin: 6px 3px;
+    color: white;
+    background-color: black;
+    padding: 0 0;
+   
+}
+
+
+.lateral {
+    background-color: #006400;
+    height: 10vh;
+    
+
+    
+   
+}
+
+.texto {
+    color: white;
+    margin: 5vh 0;
+    
+}
+
+.menu-2 {
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+
+
