@@ -10,19 +10,21 @@ import DirectionsRunIcon from "@mui/icons-material/DirectionsRun";
 import ComputerIcon from "@mui/icons-material/Computer";
 import AssessmentIcon from "@mui/icons-material/Assessment";
 import PeopleAltIcon from "@mui/icons-material/PeopleAlt";
+import SystemUpdateAltIcon from "@mui/icons-material/SystemUpdateAlt";
 
 const Menu = () => {
   return (
     <header className="lateral">
       <div className="principal">
         <div class="item">
-          <HomeIcon color="disabled" />
+          <HomeIcon className="home" color="seondary" />
           <h1 className="texto">Inicio</h1>
         </div>
 
         <Accordion className="menu-3">
           <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
+            className="menus"
+            expandIcon={<ExpandMoreIcon className="seta" />}
             aria-controls="panel1a-content"
             id="panel1a-header"
           >
@@ -33,14 +35,16 @@ const Menu = () => {
               </div>
             </Typography>
           </AccordionSummary>
-          <AccordionDetails>
+          <AccordionDetails className="menus">
             <li className="botao">Cadastrar</li>
             <li className="botao-2">Listar Desenvolvedores</li>
           </AccordionDetails>
         </Accordion>
+
         <Accordion className="menu-3">
           <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
+            className="menus"
+            expandIcon={<ExpandMoreIcon className="seta" />}
             aria-controls="panel1a-content"
             id="panel1a-header"
           >
@@ -51,7 +55,7 @@ const Menu = () => {
               </div>
             </Typography>
           </AccordionSummary>
-          <AccordionDetails>
+          <AccordionDetails className="menus">
             <li className="botao">Cadastrar</li>
             <li className="botao-2">Listar Suportes</li>
           </AccordionDetails>
@@ -59,7 +63,8 @@ const Menu = () => {
 
         <Accordion className="menu-3">
           <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
+            className="menus"
+            expandIcon={<ExpandMoreIcon className="seta" />}
             aria-controls="panel1a-content"
             id="panel1a-header"
           >
@@ -70,7 +75,7 @@ const Menu = () => {
               </div>
             </Typography>
           </AccordionSummary>
-          <AccordionDetails>
+          <AccordionDetails className="menus">
             <li className="botao">Cadastrar Sistemas</li>
             <li className="botao-2">Listar Sistemas</li>
           </AccordionDetails>
@@ -78,7 +83,28 @@ const Menu = () => {
 
         <Accordion className="menu-3">
           <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
+            className="menus"
+            expandIcon={<ExpandMoreIcon className="seta" />}
+            aria-controls="panel1a-content"
+            id="panel1a-header"
+          >
+            <Typography className="menu-3">
+              <div class="item">
+                <SystemUpdateAltIcon />
+                <div className="menu-2">Programações</div>
+              </div>
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails className="menus">
+            <li className="botao">Cadastrar Programações</li>
+            <li className="botao-2">Listar Programações</li>
+          </AccordionDetails>
+        </Accordion>
+
+        <Accordion className="menu-3">
+          <AccordionSummary
+            className="menus"
+            expandIcon={<ExpandMoreIcon className="seta" />}
             aria-controls="panel1a-content"
             id="panel1a-header"
           >
@@ -89,14 +115,15 @@ const Menu = () => {
               </div>
             </Typography>
           </AccordionSummary>
-          <AccordionDetails>
+          <AccordionDetails className="menus">
             <li className="botao">Listar Relatório</li>
           </AccordionDetails>
         </Accordion>
 
         <Accordion className="menu-3">
           <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
+            className="menus"
+            expandIcon={<ExpandMoreIcon className="seta" />}
             aria-controls="panel1a-content"
             id="panel1a-header"
           >
@@ -107,7 +134,7 @@ const Menu = () => {
               </div>
             </Typography>
           </AccordionSummary>
-          <AccordionDetails>
+          <AccordionDetails className="menus">
             <li className="botao">Cadastrar Usuario</li>
             <li className="botao">Listar Usuario</li>
             <li className="botao">Permissão de Usuario</li>
